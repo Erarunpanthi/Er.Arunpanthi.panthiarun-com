@@ -7,6 +7,7 @@
     <title>Arun Panthi - Civil Engineer Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
 
@@ -20,6 +21,8 @@
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -29,9 +32,10 @@
     <!-- Hero Section -->
     <section class="hero" id="about">
         <div class="hero-content">
-            <h2>Welcome to My Professional Portfolio</h2>
-            <p>Explore my journey and expertise as a Civil Engineer. Let's build something great together!</p>
-            <a href="#contact" class="cta-btn">Contact Me</a>
+            <img src="your-image.jpg" alt="Arun Panthi" class="hero-img">
+            <h2 class="animate__animated animate__fadeIn">Welcome to My Professional Portfolio</h2>
+            <p class="animate__animated animate__fadeIn animate__delay-1s">Explore my journey and expertise as a Civil Engineer. Let's build something great together!</p>
+            <a href="#contact" class="cta-btn animate__animated animate__fadeIn animate__delay-2s">Contact Me</a>
         </div>
     </section>
 
@@ -39,17 +43,49 @@
     <section class="section" id="skills">
         <h2>Skills & Expertise</h2>
         <div class="skills-container">
-            <div class="skill-card">
+            <div class="skill-card animate__animated animate__fadeIn animate__delay-1s">
                 <h3>Structural Design</h3>
                 <p>Expert in designing robust and efficient structures that meet safety and sustainability standards.</p>
             </div>
-            <div class="skill-card">
+            <div class="skill-card animate__animated animate__fadeIn animate__delay-2s">
                 <h3>Project Management</h3>
                 <p>Skilled in managing large-scale construction projects, ensuring timely completion and budget adherence.</p>
             </div>
-            <div class="skill-card">
+            <div class="skill-card animate__animated animate__fadeIn animate__delay-3s">
                 <h3>Building Information Modeling (BIM)</h3>
                 <p>Proficient in using BIM tools for 3D modeling, design coordination, and collaboration across disciplines.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section" id="education">
+        <h2>Education</h2>
+        <div class="education-container animate__animated animate__fadeIn animate__delay-1s">
+            <div class="education-item">
+                <h3>Bachelor's Degree in Civil Engineering</h3>
+                <p>XYZ University, 2018 - 2022</p>
+            </div>
+            <div class="education-item">
+                <h3>High School Diploma</h3>
+                <p>ABC High School, 2015 - 2018</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section" id="experience">
+        <h2>Work Experience</h2>
+        <div class="experience-container animate__animated animate__fadeIn animate__delay-1s">
+            <div class="experience-item">
+                <h3>Structural Engineer Intern</h3>
+                <p>XYZ Construction Co., June 2021 - September 2021</p>
+                <p>Assisted in designing structural plans and conducting site visits to monitor progress.</p>
+            </div>
+            <div class="experience-item">
+                <h3>Project Manager Assistant</h3>
+                <p>ABC Engineering, January 2022 - Present</p>
+                <p>Manage project schedules, budgets, and coordinate with clients and contractors.</p>
             </div>
         </div>
     </section>
@@ -58,14 +94,14 @@
     <section class="section" id="projects">
         <h2>Featured Projects</h2>
         <div class="projects-container">
-            <div class="project-card">
+            <div class="project-card animate__animated animate__fadeIn animate__delay-1s">
                 <img src="project1.jpg" alt="Project 1">
                 <div class="project-details">
                     <h3>Commercial Building in Kathmandu</h3>
                     <p>Led the design and construction of a modern commercial building, focusing on earthquake-resistant structures.</p>
                 </div>
             </div>
-            <div class="project-card">
+            <div class="project-card animate__animated animate__fadeIn animate__delay-2s">
                 <img src="project2.jpg" alt="Project 2">
                 <div class="project-details">
                     <h3>Bridge Construction in Pokhara</h3>
@@ -95,7 +131,16 @@
         </div>
     </footer>
 
-    <!-- Scripts -->
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
