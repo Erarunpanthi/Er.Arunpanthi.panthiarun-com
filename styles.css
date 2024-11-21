@@ -11,6 +11,7 @@ body {
   color: #333;
   line-height: 1.6;
   font-size: 16px;
+  overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 /* Hero Section */
@@ -23,6 +24,7 @@ body {
   align-items: center;
   text-align: center;
   position: relative;
+  padding: 0 20px;
 }
 
 .hero-content h1 {
@@ -63,16 +65,18 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .about-content {
   display: flex;
-  justify-content: space-between;
-  width: 80%;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
 }
 
 .about-left {
-  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -80,19 +84,19 @@ body {
 
 .profile-img {
   border-radius: 50%;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   object-fit: cover;
   border: 5px solid #4682B4;
 }
 
 .about-right {
   flex: 2;
-  text-align: left;
+  margin-top: 20px;
 }
 
 .about-right h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-bottom: 20px;
 }
 
@@ -107,12 +111,14 @@ body {
   padding: 40px 10%;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .education {
   display: flex;
   justify-content: space-between;
   gap: 20px;
+  width: 100%;
 }
 
 .edu-item {
@@ -209,4 +215,105 @@ footer .social-links a {
 
 footer .social-links a:hover {
   color: #FFD700;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  /* Hero Section */
+  #hero {
+    height: auto;
+    padding: 50px 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1.2rem;
+  }
+
+  .cta-btn {
+    font-size: 1rem;
+  }
+
+  /* About Section */
+  #about {
+    padding: 20px;
+  }
+
+  .about-left,
+  .about-right {
+    width: 100%;
+  }
+
+  .profile-img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .about-right h2 {
+    font-size: 1.8rem;
+  }
+
+  /* Education Section */
+  #education {
+    padding: 30px 10%;
+  }
+
+  .edu-item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* Skills Section */
+  #skills {
+    padding: 30px 10%;
+  }
+
+  .skills h2 {
+    font-size: 2rem;
+  }
+
+  .skill-card i {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .cta-btn {
+    font-size: 0.9rem;
+  }
+
+  /* About Section */
+  .profile-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .about-right h2 {
+    font-size: 1.6rem;
+  }
+
+  /* Education Section */
+  .edu-card {
+    padding: 15px;
+  }
+
+  /* Skills Section */
+  .skill-card {
+    padding: 15px;
+  }
 }
