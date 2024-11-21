@@ -269,3 +269,20 @@ footer p {
     flex-direction: column;
   }
 }
+.cta-button {
+    background-color: #28a745; /* Green button background */
+    color: white; /* White text for button */
+    padding: 10px 20px; /* Reduced padding */
+    text-decoration: none;
+    border-radius: 25px; /* Rounded button */
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 10px; /* Space above button */
+    display: inline-block; /* Ensure proper spacing */
+}
+
+.cta-button:hover {
+    background-color: #218838; /* Darker green on hover */
+    transform: scale(1.05);
+}
+
