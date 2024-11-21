@@ -360,4 +360,8 @@ footer a:hover {
         padding: 20px; /* Further reduce padding */
     }
 }
-
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 28px;
+    }
+}
