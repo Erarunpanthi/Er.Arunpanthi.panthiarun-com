@@ -16,23 +16,6 @@ h1, h2, h3 {
   margin: 0 auto;
 }
 
-/* Hero Section */
-#hero {
-  background: #4682B4;
-  color: white;
-  padding: 100px 0;
-  text-align: center;
-}
-
-#hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-}
-
-#hero p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-}
 
 .cta-buttons {
   display: flex;
@@ -365,7 +348,7 @@ footer a:hover {
         font-size: 28px;
     }
 }
-.hero {
+#hero {
     background-color: #4CAF50; /* Green background for hero section */
     color: white; /* White text for hero section */
     padding: 20px 20px; /* Reduced padding */
@@ -375,12 +358,12 @@ footer a:hover {
     max-width: 800px; /* Centered with max width */
 }
 
-.hero h1 {
+#hero h1 {
     font-size: 36px; /* Heading size */
     color: white; /* White color for heading */
     margin: 10px 0; /* Reduced margin */
 }
 
-.hero p {
+#hero p {
     margin: 10px 0; /* Reduced margin for paragraph */
 }
