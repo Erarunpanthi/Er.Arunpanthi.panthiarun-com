@@ -365,3 +365,22 @@ footer a:hover {
         font-size: 28px;
     }
 }
+.hero {
+    background-color: #4CAF50; /* Green background for hero section */
+    color: white; /* White text for hero section */
+    padding: 20px 20px; /* Reduced padding */
+    text-align: center;
+    border-radius: 10px; /* Rounded corners */
+    margin: 30px auto; /* Increased margin */
+    max-width: 800px; /* Centered with max width */
+}
+
+.hero h1 {
+    font-size: 36px; /* Heading size */
+    color: white; /* White color for heading */
+    margin: 10px 0; /* Reduced margin */
+}
+
+.hero p {
+    margin: 10px 0; /* Reduced margin for paragraph */
+}
